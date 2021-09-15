@@ -1,0 +1,21 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exe4 {
+	
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o nº de funcionários: ");
+		int funcionario = sc.nextInt();
+		System.out.println("Digite as horas diárias de trabalho: ");
+		double horas = sc.nextDouble();
+		System.out.println("Digite o valor do salário: ");
+		double valor = sc.nextDouble();
+		double salario = valor * horas;
+		System.out.println("Number = " + funcionario);
+		System.out.printf("Salary = U$%.2f%n",salario);
+		sc.close();
+	}
+
+}

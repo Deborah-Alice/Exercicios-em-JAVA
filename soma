@@ -1,0 +1,21 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exe1 {
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int val1 = sc.nextInt();
+		int val2 = sc.nextInt();
+		int soma = val1 + val2;
+		
+		System.out.printf("Soma = " + soma);
+		
+		sc.close();
+						
+	}
+
+}
